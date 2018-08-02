@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>首页</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <header id="site-header">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <div class="logo">
+                    <h2><a href="#"><b class="header-title">Mr.Shaw</b> </a></h2>
+                    </div>
+                </div>
+
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <div class="main-nav">
+                <ul class="nav nav-tabs ">
+                      <li ><a href="index.html" class="navbar-brand">首页</a></li>
+                      <li ><a href="archives.html" class="navbar-brand">归档</a></li>
+                      <li ><a href="about.html" class="navbar-brand">关于</a></li>
+                      <!--<li class="disabled" ><a href="#" class="navbar-brand">TokyoHot</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+     <script>
+                $('.nav-tabs').find('a').each(function () {
+            if (this.href == document.location.href || document.location.href.search(this.href) >= 0) {
+                $(this).parent().addClass('active'); // this.className = 'active';
+            }
+        });
+            </script>
+
+
+
+
+    <div class="content-body">
+        <div class="row">
+            <div class="widget-info">
+                <aside class="col-lg-3 col-md-3 col-sm-3 col-xs-3 center">
+                    <!--头像-->
+                    <div class="info-img">
+                        <img src="img/touxiang.jpg" class="img-responsive img-circle">
+                    </div>
+                    <!--名句-->
+                    <div class="info-sentence">
+                        <p>Stay Hungry. Stay Foolish</p>
+                    </div>
+
+                    <!--搜索框-->
+                    <div class="info-search">
+                        <h3 class="search-title">搜索</h3>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="别废话，快搜我">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info btn-search">找一找</button>
+                                    </span>
+                            </div>
+                    </div>
+
+                    <!--分类-->
+                    <div class="info-category">
+                        <h3 class="category-title">分类</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><span  class="category-name glyphicon glyphicon-list"></span>自动化测试(18)</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="category-name glyphicon glyphicon-list"></span>大数据(3)</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="category-name glyphicon glyphicon-list"></span>人工智能(90)</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="category-name glyphicon glyphicon-list"></span>性能测试(8)</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="category-name glyphicon glyphicon-list"></span>机器学习(17)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--标签云-->
+                    <div class="info-tag">
+                        <h3 class="tag-title">标签云</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Python</a>
+                            </li>
+                            <li>
+                                <a href="#">Java</a>
+                            </li>
+                            <li>
+                                <a href="#">Php</a>
+                            </li>
+                            <li>
+                                <a href="#">C++</a>
+                            </li>
+                            <li>
+                                <a href="#">.net</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </aside>
+            </div>
+
+
+
+
+            <main class="col-lg-9 col-md-9 col-sm-9 col-xs-9 center">
+                <article>
+                    <div class="article-body">
+                        <header class="article-header">
+                            <h3 class="article-title">
+                                <a href="detail.html" target="_blank">大爆炸宇宙论</a>
+                            </h3>
+                            <div class="article-meta">
+                                <span class="article-category glyphicon glyphicon-link"><a href="#">人工智能&nbsp</a></span>
+                                <span class="article-date glyphicon glyphicon-time">2018年5月20日9:30&nbsp</span>
+                                <span class="article-comments glyphicon glyphicon-comment"><a href="#">（35）&nbsp</a></span>
+                                <span class="article-views glyphicon glyphicon-eye-open">（55）&nbsp</span>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>“大爆炸宇宙论”（The Big Bang Theory）认为：宇宙是由一个致密炽热的奇点于137亿年前一次大爆炸
+                                后膨胀形成的。1927年，比利时天文学家和宇宙学家勒梅特（Georges Lemaître）首次提出了宇宙大爆炸
+                                假说。1929年，美国天文学家哈勃根据假说提出星系的红移量与星系间的距离成正比的哈勃定律，并推导
+                                出星系都在互相远离的宇宙膨胀说。 现代宇宙学中最有影响的一种学说。它的主要观点是认为宇宙曾有一
+                                段从热到冷的演化史。在这个时期里， 宇宙体系在不断地膨胀，...</p>
+                        </div>
+
+                        <div class="read-more">
+                            <button id="read-more-button" class="btn btn-xs"><a href="#">继续阅读</a></button>
+                        </div>
+                    </div>
+
+                    <div class="article-body">
+                        <header class="article-header">
+                            <h3 class="article-title">
+                                <a href="detail.html" target="_blank">大爆炸宇宙论</a>
+                            </h3>
+                            <div class="article-meta">
+                                <span class="article-category glyphicon glyphicon-link"><a href="#">人工智能&nbsp</a></span>
+                                <span class="article-date glyphicon glyphicon-time"><a href="#">2018年5月20日9:30&nbsp</a></span>
+                                <span class="article-comments glyphicon glyphicon-comment"><a href="#">（35）&nbsp</a></span>
+                                <span class="article-views glyphicon glyphicon-eye-open"><a href="#">（55）&nbsp</a></span>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>“大爆炸宇宙论”（The Big Bang Theory）认为：宇宙是由一个致密炽热的奇点于137亿年前一次大爆炸
+                                后膨胀形成的。1927年，比利时天文学家和宇宙学家勒梅特（Georges Lemaître）首次提出了宇宙大爆炸
+                                假说。1929年，美国天文学家哈勃根据假说提出星系的红移量与星系间的距离成正比的哈勃定律，并推导
+                                出星系都在互相远离的宇宙膨胀说。 现代宇宙学中最有影响的一种学说。它的主要观点是认为宇宙曾有一
+                                段从热到冷的演化史。在这个时期里， 宇宙体系在不断地膨胀，...</p>
+                        </div>
+
+                        <div class="read-more">
+                            <button id="read-more-button" class="btn btn-xs"><a href="#">继续阅读</a></button>
+                        </div>
+                    </div>
+
+                    <div class="article-pagination">
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li class="disabled"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+
+
+
+                </article>
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+<div id="site-footer">
+    <div class="row">
+        <footer class="col-lg-12">
+            <div class="glyphicon glyphicon-copyright-mark">
+                2017 - <a href="#">路漫漫其修远兮 吾将上下而求索</a>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>

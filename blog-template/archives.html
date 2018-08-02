@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/archives.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>归档</title>
+</head>
+
+<body>
+
+
+
+<div class="container">
+    <div class="row">
+        <header id="site-header">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <div class="logo">
+                    <h2><a href="#"><b class="header-title">Mr.Shaw</b> </a></h2>
+                    </div>
+                </div>
+
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <div class="main-nav">
+                <ul class="nav nav-tabs ">
+                      <li ><a href="index.html" class="navbar-brand">首页</a></li>
+                      <li ><a href="archives.html" class="navbar-brand">归档</a></li>
+                      <li ><a href="about.html" class="navbar-brand">关于</a></li>
+                      <!--<li class="disabled" ><a href="#" class="navbar-brand">TokyoHot</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+            <script>
+                $('.nav-tabs').find('a').each(function () {
+            if (this.href == document.location.href || document.location.href.search(this.href) >= 0) {
+                $(this).parent().addClass('active'); // this.className = 'active';
+            }
+        });
+            </script>
+
+
+    <div class="time-zone">
+
+<h3>OK! 目前共计 49 篇日志。 继续努力</h3>
+
+<p>一寸光阴一寸金，寸金难买寸光阴</p>
+
+<ul id='timeline'>
+
+      <li class='year-info'>
+          <span class="date-year">2013年</span>
+            <span class='circle'></span>
+        <div class='year-total'>
+          <p>
+            今年共完成90篇文章
+          </p>
+        </div>
+      </li>
+
+  <li class='work'>
+    <input class='radio' id='work4' name='works' type='radio'>
+    <div class="relative">
+      <label for='work4'><a href="detail.html" target="_blank" >大爆炸宇宙论</a></label>
+      <span class='date'>11 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+        <p>
+        “大爆炸宇宙论”（The Big Bang Theory）认为：宇宙是由一个致密炽热的奇点于137亿年前一次大爆炸
+        后膨胀形成的。1927年，比利时天文学家和宇宙学家勒梅特（Georges Lemaître）首次提出了宇宙大爆炸
+        假说。1929年，美国天文学家哈勃根据假说提出星系的红移量与星系间的距离成正比的哈勃定律，并推导
+        出星系都在互相远离的宇宙膨胀说。 现代宇宙学中最有影响的一种学说。它的主要观点是认为宇宙曾有一
+        段从热到冷的演化史。在这个时期里， 宇宙体系在不断地膨胀，...
+        </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work3' name='works' type='radio'>
+    <div class="relative">
+      <label for='work3'>Lorem ipsum dolor sit amet</label>
+      <span class='date'>10 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work2' name='works' type='radio'>
+    <div class="relative">
+      <label for='work2'>Lorem ipsum dolor sit amet</label>
+      <span class='date'>09 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work1' name='works' type='radio'>
+    <div class="relative">
+      <label for='work1'>Lorem ipsum dolor sit amet</label>
+      <span class='date'>08 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+      </p>
+    </div>
+  </li>
+</ul>
+</div>
+
+    <div id="site-footer">
+    <div class="row">
+        <footer class="col-lg-12">
+            <div class="glyphicon glyphicon-copyright-mark">
+                2017 - <a href="#">路漫漫其修远兮 吾将上下而求索</a>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>
